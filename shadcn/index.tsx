@@ -1,6 +1,3 @@
-// Tüm bileşenler için import işlemlerini yapıyoruz
-import 'shadcn/styles.css';
-
 export { Accordion } from '@/components/ui/accordion';
 export { AlertDialog } from '@/components/ui/alert-dialog';
 export { Alert } from '@/components/ui/alert';

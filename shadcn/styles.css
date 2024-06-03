@@ -1,4 +1,14 @@
-@import '@shadcn/base';
-@import '@shadcn/components';
-@import '@shadcn/utilities';
-@import '@shadcn/ui/styles.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shadcn UI bileşenleri için stiller */
+.alert {
+  @apply bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative;
+}
+
+.button {
+  @apply bg-blue-500 text-white px-4 py-2 rounded;
+}
+
+/* Diğer bileşenler için stiller buraya eklenebilir */
