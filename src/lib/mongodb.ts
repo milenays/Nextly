@@ -1,9 +1,9 @@
 import { MongoClient } from 'mongodb';
 
-const uri = process.env.MONGODB_URI as string;
+const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/next-app';
 const options = {};
 
-let client: MongoClient;
+let client;
 let clientPromise: Promise<MongoClient>;
 
 if (!process.env.MONGODB_URI) {
